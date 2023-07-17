@@ -15,10 +15,8 @@ function App() {
   var token = null;
 
   token = localStorage.getItem('kjdToken');
-  console.log('Token ', token);
 
   const RefreshToken = () => {
-    console.log('trying to refresh tokenData ');
 
     fetch('http://localhost:3000/api/generateToken', {
       method: "GET",
@@ -44,7 +42,6 @@ function App() {
 
   useEffect(() => {
     if (tokenRefreshed !== {}) {
-      console.log('token updated ');
       fetch('http://localhost:3000/api/brands', {
           method: "GET",
           headers: {
@@ -60,7 +57,6 @@ function App() {
             }
           })
           .then((res2) => {
-            console.log('res2 ', res2)
             if (Array.isArray(res2)) {
               setData(res2);
             } else {
