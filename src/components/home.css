@@ -1,0 +1,22 @@
+.brand-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-list-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.brand-list-name {
+    font-weight: bold;
+}
+
+.brand-list-industry,
+.brand-list-score {
+    margin-top: 5px;
+}

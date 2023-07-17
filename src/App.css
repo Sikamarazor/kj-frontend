@@ -1,0 +1,40 @@
+.App {
+  font-family: Inter;
+}
+.container {
+  padding: 15px;
+  margin: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #70259B;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  text-align: center;
+}
+.btn-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 8px;
+}
+
+/* primary/main
+
+00D1B2
+*/
+.primary-main {
+  background: #70259B;
+  color: var(--shades-white, #FFF);
+  /* focus colors/primary-focus */
+  box-shadow: 0px 0px 0px 2px rgba(0, 209, 178, 0.25);
+  border-radius: 9px;
+}
+

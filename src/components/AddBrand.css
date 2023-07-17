@@ -1,0 +1,23 @@
+.input {
+    width: 100%; flex-direction: column; justify-content: center; align-items: flex-start; gap: 4px; display: inline-flex;
+}
+
+.input.inside {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.label {
+    align-self: stretch; color: black; font-size: 16px; font-family: Inter; font-weight: 700; line-height: 24px; word-wrap: break-word;
+}
+
+.label.auto-inside {
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.field {
+    align-self: stretch; height: 40px; padding-left: 16px; padding-right: 16px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 6px; overflow: hidden; border: 0.50px #70259B solid; justify-content: flex-start; align-items: center; gap: 12px; display: inline-flex;
+}
