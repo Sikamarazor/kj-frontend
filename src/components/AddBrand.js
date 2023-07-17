@@ -31,12 +31,10 @@ function AddBrand() {
         if (res.ok) {
           return res.json();
         } else {
-          console.log(res);
           throw res.statusText;
         }
       })
       .then((res2) => {
-        console.log('res2 ', res2)
         toast(res2.response);
         setCompanyName("");
       }).catch((err) => {
